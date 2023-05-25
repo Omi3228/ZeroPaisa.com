@@ -27,7 +27,9 @@ let friends = ["SHRI","ROHAN", "RITIK", "MUKESH"];
 // } 
 
 
- alert("Welcome To The Garib Brand: *zeroPaisa*");
+/* alert("Welcome To Garib Brand: zeroPaisa.com");*/
+
+ alert("For Greate Experience use Desktop Mode in SmartPhone");
 
 
 /*let text;

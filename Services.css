@@ -1,0 +1,414 @@
+/* css reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+    
+    /* css variables */
+    
+    
+    /* navigation */
+    #navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    
+    
+    }
+    /* Navigation bar logo ang image  */
+    #logo{
+         margin: 34px 45px;
+        }
+    
+        #logo img{
+            height: 80px;
+            margin: -23px -23px;
+    
+            
+    
+        }
+        #logo img:hover {
+            /* Start the shake animation and make the animation last for 0.5 seconds */
+            animation: shake 0.5s;
+          
+            /* When the animation is finished, start again */
+            animation-iteration-count: infinite;
+          }
+          
+          @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+          }
+    
+    /* Navigation bar :list style  */
+    #navbar ul{
+        display: flex;
+        font-family: 'Gulzar', serif;
+    }
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    
+    #navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    }
+    #navbar ul li a{
+        color: white;
+    display: block;
+    padding: 13px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+        }
+        
+        #navbar ul li a:hover{
+          
+            color: black;
+            background-color: white;
+            }
+    
+    
+            
+            /* home section  */
+    
+    #home{
+    
+        display:flex;
+        flex-direction: column;
+        padding: 3px 150px;
+        justify-content: center;
+        align-items: center;
+        height: 329px;
+    
+    }
+    #home::before{
+    
+        content: "";
+        position: absolute;
+        background: url('logo10.jpg') no-repeat center center/cover;
+        height: 450px;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.89;
+    }
+    #home h1{
+        color: 	rgb(4, 4, 4);
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.8rem;
+        background-color: aqua;
+        border-radius: 9px;
+    
+    }
+    #home p{
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 80px;
+        font-family: 'Bree Serif', serif;
+    }
+    
+    
+    /* srvices section  */
+    
+    #services{
+    
+    margin: 34px;
+    display: flex;
+    }
+    
+    #services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 24px;
+    
+    background-color: #ff00000d;
+    }
+    #services .box img{
+     height: 150px;
+     display: block;
+     margin: auto;
+    }
+    #services .box img:hover{
+      
+     /* Start the shake animation and make the animation last for 0.5 seconds */
+     animation: shake 0.5s;
+          
+     /* When the animation is finished, start again */
+     animation-iteration-count: infinite;
+    }
+    
+    @keyframes shake {
+     0% { transform: translate(1px, 1px) rotate(0deg); }
+     10% { transform: translate(-1px, -2px) rotate(-1deg); }
+     20% { transform: translate(-3px, 0px) rotate(1deg); }
+     30% { transform: translate(3px, 2px) rotate(0deg); }
+     40% { transform: translate(1px, -1px) rotate(1deg); }
+     50% { transform: translate(-1px, 2px) rotate(-1deg); }
+     60% { transform: translate(-3px, 1px) rotate(0deg); }
+     70% { transform: translate(3px, 1px) rotate(-1deg); }
+     80% { transform: translate(-1px, -1px) rotate(1deg); }
+     90% { transform: translate(1px, 2px) rotate(0deg); }
+     100% { transform: translate(1px, -2px) rotate(-1deg); }
+    
+    }
+    #services .box p{
+        font-family: 'Righteous', cursive;
+    }
+    
+    
+    /* secondservices................................. */
+    #secondservices{
+    margin: 22px;
+    /* display: flex; */
+     
+    
+    
+    }
+    
+    
+    #secondservices .boxs{
+        border: 2px solid black;
+        justify-content: center;
+        padding: 23px;
+        margin: 10px 6px;
+        border-radius: 24px;
+        background-color: rgb(23 153 39 / 10%)
+    
+        }
+        #secondservices .boxs img{
+         height: 150px;
+         display: block;
+         margin: auto;
+        }
+    
+        #secondservices .boxs img:hover{
+    
+     transform: scale(1.3);
+     transition-duration: 1s;
+       }
+    
+    
+    
+    /* utility class*/
+    
+    .h-primary{
+    
+        font-size: 2.2rem;
+        padding: 12px;
+        font-family: 'Bree Serif', serif;
+    }
+    .h-secondary{
+    
+        font-size: 1.2rem;
+        padding: 12px;
+        font-family: 'Bree Serif', serif;
+    }
+    .h-another{
+    
+        font-size: 1.0rem;
+        text-align: center;
+    }
+    .btn{
+    
+        padding: 6px 20px;
+        border: 2px solid white;
+        border-radius: 8px;
+        background-color: brown;
+        color: white;
+        margin: 17px;
+        font-size: 1.5rem;
+        cursor: pointer;
+       
+    }
+    
+    .btn:hover{
+        background-color:white;
+        color: red;
+        border-radius: 18px;
+        transition: 1s;
+        animation-timing-function: ease-out;
+        /* transform: scale(2); */
+        transform: rotate(720deg);
+    }
+    
+    
+    /* second buttons */
+    .btns{
+    
+        padding: 6px 20px;
+        border: 2px solid white;
+        border-radius: 8px;
+        background-color: #06463d;
+        color: white;
+        margin: 15px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        /* margin-left: 832px; */
+    }
+    
+    .btns:hover{
+        background-color:white;
+        border: 1px solid black;
+        color: red;
+        border-radius: 18px;
+        transition: 1s;
+        animation-timing-function: ease-out;
+        /* transform: scale(2); */
+        /* transform: rotate(360deg); */
+        transform: translateX(50px);
+        transition-duration: 2s;
+    
+    
+        
+    }
+    
+    
+    .center{
+    
+        text-align: center;
+    }
+    /* clients section...  */
+    
+    #client-section::before{
+    content: "";
+    position: absolute;
+    background: url('social11.jpg') no-repeat center center/cover;
+    width:100%;
+    height: 85%;
+    z-index:-1;
+    opacity:0.2;
+    
+    
+    }
+    #client-section{
+    
+        position: relative;
+    }
+    
+    #clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    }
+    #clients img{
+        height: 110px;
+    }
+    #clients img:hover{
+        /* transform: scale(2); */
+        /* transform: rotate(360deg); */
+        transform: scaleX(-1);
+        cursor: pointer;
+        
+    }
+     .client-item{
+    padding: 50px;
+     }
+     .client-item:hover{
+        /* transform: rotate(360deg); */
+        transform: scaleX(-1);
+      
+     }
+    
+     /* contact form.......... */
+    
+     #contact-form{
+    
+        border: 2px solid khaki;
+        margin: 12px 336px;
+        padding: 26px 76px;
+        width: 41%;
+        border-radius: 17px;
+        background-color: #080c0669;
+        
+        
+      
+    }
+    .form-group input{
+    
+        text-align: center;
+        display: block;
+        width: 401px;
+        padding: 14px;
+        border: 1px solid rgb(236, 226, 226);
+        margin: 11px auto;
+        font-size: 18px;
+        border-radius: 10px;
+        margin: 11px auto 17px 64px;
+        font-family: 'Bree Serif', serif;
+        justify-content: center;
+        display: flex;
+    
+    }
+    #contact-form button{
+        margin: 12px 88px;
+        display: block;
+        font-family: 'Bree Serif', serif;
+        width: 68%;
+        padding: 7px;
+        font-size: 18px;
+        border-radius: 11px;
+        color: white;
+        background-color: #442b2b;
+    }
+    #contact-form button:hover{
+    
+        /* background-color: aqua; */
+     background-color: #810a0a;
+     color: white;
+    
+    }
+    #contact-form textarea{
+    width: 100%;
+    padding:0.5rem;
+    
+    }
+    
+    
+     .footer{
+        background-color: #3e0d0d;
+        color: white;
+        /* align-items: center;
+        justify-content: center; */
+        text-align: center;
+        margin-top: 48px;
+       padding: 12px 16px;
+       margin: 12px auto;
+      
+     }
+     
+     .footer p{
+    
+        font-family: 'Bree Serif', serif;
+        line-height: 30px;
+     }
+    
+    
+    
+    
+     /*About section------------------------------------------------*/
+     
