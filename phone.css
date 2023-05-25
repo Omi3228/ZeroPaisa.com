@@ -3,11 +3,17 @@
     flex-direction: column;
 }
 
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
  /* home section */
 
 #home{
-    height: 345px;
-    padding: 13px 115px;
+    height: 370px;
+    padding: px 28px;
     /* flex-direction: column; */
 }
 #home::before{
@@ -22,10 +28,13 @@
     flex-direction: column;
 
  }
-/* #Services .box{
 
+ #Services .box{
+padding: 14px;
+margin: 2px 0px;
+margin-bottom: 20px;
  
-} */
+} 
 
 /* second services */
 #secondservices .boxs{
@@ -33,16 +42,20 @@ margin: 15px 15px 15px 59px;
 }
  /* client section  */
 #clients{
-
+ flex-wrap: wrap;
     overflow: hidden;
 }
 #clients img{
-    height: 50px;
+    height: auto;
+    width: 66px;
+    padding: 6px;
 }
 
 
  /* contact section  */
- 
+ .form-group{
+    width: 80%;
+ }
 .form-group input {
 
     width: 243px;
