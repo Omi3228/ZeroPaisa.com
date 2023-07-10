@@ -13,7 +13,7 @@
 
 #home{
     height: 370px;
-    padding: px 28px;
+    padding: 3px 28px;
     /* flex-direction: column; */
 }
 #home::before{
@@ -55,12 +55,15 @@ margin: 15px 15px 15px 59px;
  /* contact section  */
  .form-group{
     width: 80%;
+    flex-direction: column;
+
  }
 .form-group input {
 
-    width: 243px;
+    width: 120px;
     padding: 11px;
-    margin: 27px auto 17px 69px;
+    margin: 27px auto 17px 49px;
+
 
 }
 
@@ -68,6 +71,7 @@ margin: 15px 15px 15px 59px;
 
     margin: 12px 200px;
     padding: 12px 21px;
+   
 }
  /* footer   */
 
@@ -78,6 +82,11 @@ margin: 15px 15px 15px 59px;
     font-size: 26px;
  }
 
+ .btn{
+
+    font-size: 13px;
+    padding: 4px 8px;
+ }
 
 
 
